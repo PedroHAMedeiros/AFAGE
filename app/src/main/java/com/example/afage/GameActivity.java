@@ -1,4 +1,4 @@
-package com.example.afagames;
+package com.example.afage;
 
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -12,7 +12,7 @@ public class GameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         // Exemplo de como acessar uma ImageView programaticamente
-        ImageView image1 = findViewById(R.id.image1);
+
         // Aqui você pode adicionar lógicas, como um clique na imagem ou alterar o conteúdo programaticamente.
     }
 }

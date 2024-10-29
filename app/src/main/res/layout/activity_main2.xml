@@ -4,23 +4,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Imagem 1 no topo esquerdo -->
+    <!-- Caixa de texto no topo da tela -->
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite a primeira vogal de cada imagem"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
 
-    <!-- Imagem 2 no centro -->
-
-    <!-- Imagem 3 no canto inferior direito -->
+    <!-- Imagem e campo de texto para Urso -->
 
     <ImageView
         android:id="@+id/image_urso"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="88dp"
         android:contentDescription="Imagem do urso"
         android:src="@drawable/urso"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/textView_title" />
 
+    <EditText
+        android:id="@+id/editText_urso"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="Digite aqui"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/image_urso"
+        app:layout_constraintStart_toStartOf="@id/image_urso"
+        android:layout_marginTop="8dp" />
+
+    <!-- Imagem e campo de texto para Urubu -->
     <ImageView
         android:id="@+id/image_urubu"
         android:layout_width="100dp"
@@ -34,37 +54,106 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.47" />
 
+    <EditText
+        android:id="@+id/editText_urubu"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="Digite aqui"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/image_urubu"
+        app:layout_constraintStart_toStartOf="@id/image_urubu"
+        android:layout_marginTop="8dp" />
+
+    <!-- Imagem e campo de texto para Óculos -->
+
     <ImageView
         android:id="@+id/image_oculos"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginEnd="292dp"
-        android:layout_marginBottom="212dp"
+        android:layout_marginBottom="156dp"
         android:contentDescription="Imagem de óculos"
         android:src="@drawable/oculos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <EditText
+        android:id="@+id/editText_oculos"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="Digite aqui"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/image_oculos"
+        app:layout_constraintStart_toStartOf="@id/image_oculos"
+        android:layout_marginTop="8dp" />
+
+    <!-- Imagem e campo de texto para Estrela -->
+
     <ImageView
         android:id="@+id/image_estrela"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="444dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="508dp"
         android:contentDescription="Imagem da estrela"
         android:src="@drawable/estrela"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <EditText
+        android:id="@+id/editText_estrela"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="Digite aqui"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/image_estrela"
+        app:layout_constraintStart_toStartOf="@id/image_estrela"
+        android:layout_marginTop="8dp" />
+
+    <!-- Imagem e campo de texto para Espelho -->
+
     <ImageView
         android:id="@+id/image_espelho"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginBottom="332dp"
         android:contentDescription="Imagem do espelho"
         android:src="@drawable/espelho"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <EditText
+        android:id="@+id/editText_espelho"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="Digite aqui"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/image_espelho"
+        app:layout_constraintStart_toStartOf="@id/image_espelho"
+        android:layout_marginTop="8dp" />
+
+
+    <ImageView
+        android:id="@+id/image_aviao"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="156dp"
+        android:contentDescription="Imagem do aviao"
+        android:src="@drawable/aviao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_aviao"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="Digite aqui"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/image_aviao"
+        app:layout_constraintStart_toStartOf="@id/image_aviao"
+        android:layout_marginTop="8dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
