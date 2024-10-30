@@ -1,0 +1,152 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView_phase_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fase 2: Digite a primeira vogal de cada imagem"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Exemplo de nova imagem e caixa de texto -->
+
+    <ImageView
+        android:id="@+id/image_da_igreja"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/igreja"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_phase_title" />
+
+    <EditText
+        android:id="@+id/editText_resposta_fase2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Digite a letra"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/image_da_igreja"
+        app:layout_constraintTop_toBottomOf="@id/image_da_igreja" />
+
+    <ImageView
+        android:id="@+id/image_da_ilha"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="288dp"
+        android:src="@drawable/ilha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_phase_title" />
+
+    <EditText
+        android:id="@+id/editText_resposta_ilha"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Digite a letra"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/image_da_ilha"
+        app:layout_constraintTop_toBottomOf="@id/image_da_ilha" />
+
+    <ImageView
+        android:id="@+id/image_da_anel"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/anel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_phase_title" />
+
+    <EditText
+        android:id="@+id/editText_resposta_anel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Digite a letra"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/image_da_anel"
+        app:layout_constraintTop_toBottomOf="@id/image_da_anel" />
+
+    <ImageView
+        android:id="@+id/image_do_elefante"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="296dp"
+        android:src="@drawable/elefante"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_phase_title" />
+
+    <EditText
+        android:id="@+id/editText_resposta_elefante"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Digite a letra"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/image_do_elefante"
+        app:layout_constraintTop_toBottomOf="@id/image_do_elefante" />
+
+    <ImageView
+        android:id="@+id/image_do_osso"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="476dp"
+        android:src="@drawable/osso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_phase_title" />
+
+    <EditText
+        android:id="@+id/editText_resposta_osso"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Digite a letra"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/image_do_osso"
+        app:layout_constraintTop_toBottomOf="@id/image_do_osso" />
+
+    <ImageView
+        android:id="@+id/image_da_ovelha"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="476dp"
+        android:src="@drawable/ovelha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_phase_title" />
+
+    <EditText
+        android:id="@+id/editText_resposta_ovelha"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Digite a letra"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/image_da_ovelha"
+        app:layout_constraintTop_toBottomOf="@id/image_da_ovelha" />
+
+    <Button
+        android:id="@+id/button_next_phase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="8dp"
+        android:enabled="false"
+        android:text="Próxima Fase"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText_resposta_ovelha" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
