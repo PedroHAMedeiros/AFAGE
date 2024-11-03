@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -29,20 +30,17 @@ public class MainActivity2 extends AppCompatActivity {
 
         // Acessar o botão de próxima fase
         buttonNextPhase = findViewById(R.id.button_next_phase);
-        buttonNextPhase.setEnabled(false); // Inicia desativado
 
         // Adicionar TextWatcher a cada EditText
-        editTextUrso.addTextChangedListener(new CustomTextWatcher());
-        editTextUrubu.addTextChangedListener(new CustomTextWatcher());
-        editTextOculos.addTextChangedListener(new CustomTextWatcher());
-        editTextEstrela.addTextChangedListener(new CustomTextWatcher());
-        editTextEspelho.addTextChangedListener(new CustomTextWatcher());
-        editTextAviao.addTextChangedListener(new CustomTextWatcher());
+        editTextUrso.addTextChangedListener(new CustomTextWatcher(editTextUrso, "u"));
+        editTextUrubu.addTextChangedListener(new CustomTextWatcher(editTextUrubu, "u"));
+        editTextOculos.addTextChangedListener(new CustomTextWatcher(editTextOculos, "o"));
+        editTextEstrela.addTextChangedListener(new CustomTextWatcher(editTextEstrela, "e"));
+        editTextEspelho.addTextChangedListener(new CustomTextWatcher(editTextEspelho, "e"));
+        editTextAviao.addTextChangedListener(new CustomTextWatcher(editTextAviao, "a"));
 
         // Configurar o botão para avançar para a próxima fase
         buttonNextPhase.setOnClickListener(v -> {
-            Toast.makeText(this, "Indo para a próxima fase!", Toast.LENGTH_SHORT).show();
-            // Inicia a próxima Activity
             startActivity(new Intent(MainActivity2.this, NextPhaseActivity.class));
         });
     }
@@ -68,6 +66,14 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     private class CustomTextWatcher implements TextWatcher {
+        private EditText editText;
+        private String correctLetter;
+
+        public CustomTextWatcher(EditText editText, String correctLetter) {
+            this.editText = editText;
+            this.correctLetter = correctLetter;
+        }
+
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
 
@@ -76,10 +82,16 @@ public class MainActivity2 extends AppCompatActivity {
 
         @Override
         public void afterTextChanged(Editable s) {
-            checkForNextPhase(); // Verifica se deve ativar o botão de próxima fase
+            if (s.toString().equalsIgnoreCase(correctLetter)) {
+                editText.setTextColor(getResources().getColor(android.R.color.holo_green_dark));
+            } else {
+                editText.setTextColor(getResources().getColor(android.R.color.black));
+            }
+            checkForNextPhase();
         }
     }
 }
+
 
 
 

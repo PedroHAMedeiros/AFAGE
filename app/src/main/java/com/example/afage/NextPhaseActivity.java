@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 public class NextPhaseActivity extends AppCompatActivity {
 
@@ -35,12 +36,12 @@ public class NextPhaseActivity extends AppCompatActivity {
         buttonNextPhase.setEnabled(false); // Desativar o botão inicialmente
 
         // Adicionar TextWatcher a cada EditText
-        editTextIgreja.addTextChangedListener(new CustomTextWatcher());
-        editTextIlha.addTextChangedListener(new CustomTextWatcher());
-        editTextAnel.addTextChangedListener(new CustomTextWatcher());
-        editTextElefante.addTextChangedListener(new CustomTextWatcher());
-        editTextOsso.addTextChangedListener(new CustomTextWatcher());
-        editTextOvelha.addTextChangedListener(new CustomTextWatcher());
+        editTextIgreja.addTextChangedListener(new CustomTextWatcher(editTextIgreja, "i"));
+        editTextIlha.addTextChangedListener(new CustomTextWatcher(editTextIlha, "i"));
+        editTextAnel.addTextChangedListener(new CustomTextWatcher(editTextAnel, "a"));
+        editTextElefante.addTextChangedListener(new CustomTextWatcher(editTextElefante, "e"));
+        editTextOsso.addTextChangedListener(new CustomTextWatcher(editTextOsso, "o"));
+        editTextOvelha.addTextChangedListener(new CustomTextWatcher(editTextOvelha, "o"));
 
         // Configurar ação do botão para ir para a terceira fase
         buttonNextPhase.setOnClickListener(v -> {
@@ -59,7 +60,7 @@ public class NextPhaseActivity extends AppCompatActivity {
         String letterOsso = editTextOsso.getText().toString().toLowerCase();
         String letterOvelha = editTextOvelha.getText().toString().toLowerCase();
 
-        // Verifica se as vogais iniciais estão corretas
+        // Verifica se todas as letras estão corretas para ativar o botão de próxima fase
         if (letterIgreja.equals("i") && letterIlha.equals("i") &&
                 letterAnel.equals("a") && letterElefante.equals("e") &&
                 letterOsso.equals("o") && letterOvelha.equals("o")) {
@@ -73,6 +74,14 @@ public class NextPhaseActivity extends AppCompatActivity {
     }
 
     private class CustomTextWatcher implements TextWatcher {
+        private EditText editText;
+        private String correctLetter;
+
+        public CustomTextWatcher(EditText editText, String correctLetter) {
+            this.editText = editText;
+            this.correctLetter = correctLetter;
+        }
+
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
 
@@ -81,6 +90,12 @@ public class NextPhaseActivity extends AppCompatActivity {
 
         @Override
         public void afterTextChanged(Editable s) {
+            // Verificar se o texto digitado está correto e alterar a cor
+            if (s.toString().equalsIgnoreCase(correctLetter)) {
+                editText.setTextColor(ContextCompat.getColor(NextPhaseActivity.this, android.R.color.holo_green_dark));
+            } else {
+                editText.setTextColor(ContextCompat.getColor(NextPhaseActivity.this, android.R.color.black));
+            }
             checkForNextPhase(); // Verifica se deve ativar o botão de próxima fase
         }
     }
