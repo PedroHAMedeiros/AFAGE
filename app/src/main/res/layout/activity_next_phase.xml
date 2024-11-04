@@ -4,18 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Exemplo de nova imagem e caixa de texto -->
+
     <TextView
         android:id="@+id/textView_phase_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fase 2: Digite a primeira vogal de cada imagem"
+        android:layout_marginTop="28dp"
+        android:text=" Digite a primeira vogal de cada imagem"
         android:textSize="18sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"/>
-
-    <!-- Exemplo de nova imagem e caixa de texto -->
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/image_da_igreja"

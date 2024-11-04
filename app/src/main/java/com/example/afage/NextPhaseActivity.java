@@ -45,10 +45,9 @@ public class NextPhaseActivity extends AppCompatActivity {
 
         // Configurar ação do botão para ir para a terceira fase
         buttonNextPhase.setOnClickListener(v -> {
-            Toast.makeText(this, "Indo para a próxima fase!", Toast.LENGTH_SHORT).show();
-            // Aqui você pode iniciar a terceira Activity
-            // Exemplo: startActivity(new Intent(NextPhaseActivity.this, ThirdPhaseActivity.class));
+            startActivity(new Intent(NextPhaseActivity.this, activity_third_phase.class));
         });
+
     }
 
     private void checkForNextPhase() {
