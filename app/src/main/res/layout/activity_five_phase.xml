@@ -1,0 +1,151 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/textView_phase_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Digite o número correto de macacos e bananas na tela"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Exemplo de imagem tipo 1 -->
+
+    <!-- Exemplo de imagem tipo 2 -->
+
+    <ImageView
+        android:id="@+id/image_tipo1_1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="128dp"
+        android:src="@drawable/banana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/image_tipo1_2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="296dp"
+        android:src="@drawable/banana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_tipo1_3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="364dp"
+        android:src="@drawable/banana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_tipo1_4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/banana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_tipo2_1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="276dp"
+        android:src="@drawable/macaco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Campo de entrada para a quantidade de bananas -->
+    <ImageView
+        android:id="@+id/image_tipo2_2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="176dp"
+        android:src="@drawable/macaco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_tipo2_3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="364dp"
+        android:layout_marginEnd="60dp"
+        android:src="@drawable/macaco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_tipo2_4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/macaco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_tipo2_5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="232dp"
+        android:src="@drawable/macaco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_tipo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Digite a quantidade de bananas"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editText_tipo2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo de entrada para a quantidade de macacos -->
+    <EditText
+        android:id="@+id/editText_tipo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Digite a quantidade de macacos"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/button_check_answer"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Botão para verificar a resposta -->
+    <Button
+        android:id="@+id/button_check_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verificar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="152dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

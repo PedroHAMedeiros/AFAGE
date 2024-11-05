@@ -32,7 +32,7 @@ public class ActivityQuatroPhase extends AppCompatActivity {
     private void setButtonListeners(final Button correctButton) {
         View.OnClickListener listener = v -> {
             if (v == correctButton) {
-                startActivity(new Intent(ActivityQuatroPhase.this, NextPhaseActivity.class));
+                startActivity(new Intent(ActivityQuatroPhase.this, ActivityFivePhase.class));
                 Toast.makeText(this, "Resposta correta!", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(this, "Tente novamente!", Toast.LENGTH_SHORT).show();
