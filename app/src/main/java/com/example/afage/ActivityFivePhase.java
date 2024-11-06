@@ -36,7 +36,7 @@ public class ActivityFivePhase extends AppCompatActivity {
 
         if (tipo1Count.equals("4") && tipo2Count.equals("5")) {
             Toast.makeText(this, "Resposta correta! Indo para a próxima fase!", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(ActivityFivePhase.this, NextPhaseActivity.class));
+            startActivity(new Intent(ActivityFivePhase.this, ActivityFivePhase.class));
         } else {
             Toast.makeText(this, "Tente novamente!", Toast.LENGTH_SHORT).show();
         }
