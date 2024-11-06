@@ -13,15 +13,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Referência ao botão pelo ID
+        // Referência ao botão de início pelo ID
         Button startButton = findViewById(R.id.button_start);
-
-        // Configurando o listener de clique no botão
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Iniciando a nova atividade (GameActivity)
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(intent);
+            }
+        });
+
+        // Referência ao botão de Selecionador de Fases
+        Button phaseSelectorButton = findViewById(R.id.button_phase_selector);
+        phaseSelectorButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Iniciando a atividade do seletor de fases
+                Intent intent = new Intent(MainActivity.this, PhaseSelectorActivity.class);
                 startActivity(intent);
             }
         });
