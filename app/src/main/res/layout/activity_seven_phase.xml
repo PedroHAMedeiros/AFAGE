@@ -1,0 +1,121 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitySevenPhase">
+
+    <!-- Título -->
+
+    <!-- Grid de Imagens (3 imagens) -->
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Numere as imagens de acordo com a frase correspondente:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout_images"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        app:layout_constraintTop_toBottomOf="@id/textView_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp">
+
+        <!-- Imagem 1 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/meninadoce" />
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Num"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <!-- Imagem 2 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/fadalobo" />
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Num"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <!-- Imagem 3 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/pipamenino" />
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Num"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </GridLayout>
+
+    <!-- Lista de Frases -->
+    <TextView
+        android:id="@+id/textView_phrases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1) A MENINA COME DOCE\n2) O LOBO E A FADA\n3) O CAFÉ É DO VOVÔ"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/gridLayout_images"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botão Verificar -->
+    <Button
+        android:id="@+id/button_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verificar"
+        app:layout_constraintTop_toBottomOf="@id/textView_phrases"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
