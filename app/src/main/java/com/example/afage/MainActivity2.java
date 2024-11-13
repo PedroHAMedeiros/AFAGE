@@ -83,7 +83,7 @@ public class MainActivity2 extends AppCompatActivity {
         @Override
         public void afterTextChanged(Editable s) {
             if (s.toString().equalsIgnoreCase(correctLetter)) {
-                editText.setTextColor(getResources().getColor(android.R.color.holo_green_dark));
+                editText.setTextColor(getResources().getColor(android.R.color.holo_green_light));
             } else {
                 editText.setTextColor(getResources().getColor(android.R.color.black));
             }

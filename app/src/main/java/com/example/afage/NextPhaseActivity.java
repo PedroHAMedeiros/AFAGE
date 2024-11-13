@@ -91,7 +91,7 @@ public class NextPhaseActivity extends AppCompatActivity {
         public void afterTextChanged(Editable s) {
             // Verificar se o texto digitado está correto e alterar a cor
             if (s.toString().equalsIgnoreCase(correctLetter)) {
-                editText.setTextColor(ContextCompat.getColor(NextPhaseActivity.this, android.R.color.holo_green_dark));
+                editText.setTextColor(ContextCompat.getColor(NextPhaseActivity.this, android.R.color.holo_green_light));
             } else {
                 editText.setTextColor(ContextCompat.getColor(NextPhaseActivity.this, android.R.color.black));
             }
