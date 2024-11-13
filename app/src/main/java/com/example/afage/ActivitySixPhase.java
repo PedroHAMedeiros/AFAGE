@@ -31,6 +31,7 @@ public class ActivitySixPhase extends AppCompatActivity {
 
                 if (tipo1Count.equals("3") && tipo2Count.equals("2")) {
                     Toast.makeText(ActivitySixPhase.this, "Correto! Avançando para a próxima fase.", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(ActivitySixPhase.this, ActivitySevenPhase.class));
                     // Próxima fase (ou fim do jogo)
                 } else {
                     Toast.makeText(ActivitySixPhase.this, "Tente novamente!", Toast.LENGTH_SHORT).show();

@@ -22,6 +22,8 @@ public class PhaseSelectorActivity extends AppCompatActivity {
         Button buttonPhase6 = findViewById(R.id.button_phase6);
         Button buttonPhase7 = findViewById(R.id.button_phase7);
         Button buttonPhase8 = findViewById(R.id.button_phase8);
+        Button buttonPhase9 = findViewById(R.id.button_phase9);
+        Button buttonPhase10 = findViewById(R.id.button_phase10);
 
         // Ir para Fase 1
         buttonPhase1.setOnClickListener(v -> {
@@ -65,6 +67,16 @@ public class PhaseSelectorActivity extends AppCompatActivity {
         // Ir para Fase 8
         buttonPhase8.setOnClickListener(v -> {
             Intent intent = new Intent(PhaseSelectorActivity.this, ActivityOitoPhase.class);
+            startActivity(intent);
+        });
+        // Ir para Fase 9
+        buttonPhase9.setOnClickListener(v -> {
+            Intent intent = new Intent(PhaseSelectorActivity.this, ActivityNinePhase.class);
+            startActivity(intent);
+        });
+        // Ir para Fase 10
+        buttonPhase10.setOnClickListener(v -> {
+            Intent intent = new Intent(PhaseSelectorActivity.this, ActivityTenPhase.class);
             startActivity(intent);
         });
 

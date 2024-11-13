@@ -1,5 +1,6 @@
 package com.example.afage;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,6 +38,7 @@ public class ActivityOitoPhase extends AppCompatActivity {
 
         if (resposta1.equals("2") && resposta2.equals("1") && resposta3.equals("3")) {
             Toast.makeText(this, "Parabéns, você acertou!", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(ActivityOitoPhase.this, ActivityNinePhase.class));
         } else {
             Toast.makeText(this, "Tente novamente!", Toast.LENGTH_SHORT).show();
         }

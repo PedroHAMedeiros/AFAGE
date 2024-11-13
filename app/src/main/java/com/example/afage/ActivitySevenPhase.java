@@ -1,5 +1,6 @@
 package com.example.afage;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -51,8 +52,11 @@ public class ActivitySevenPhase extends AppCompatActivity {
             }
 
             if (isCorrect) {
+                // Se todas as respostas estiverem corretas, avançar para a ActivityOitoPhase
                 Toast.makeText(this, "Parabéns, você acertou!", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(ActivitySevenPhase.this, ActivityOitoPhase.class));
             } else {
+                // Mensagem para respostas incorretas
                 Toast.makeText(this, "Algumas respostas estão incorretas. Tente novamente!", Toast.LENGTH_SHORT).show();
             }
         } catch (NumberFormatException e) {
