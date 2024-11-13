@@ -12,7 +12,7 @@ public class activity_third_phase extends AppCompatActivity {
 
     private ImageView imageCentral;
     private Button buttonOption1, buttonOption2, buttonOption3, buttonOption4;
-    private String correctAnswer = "Apito"; // Nome correto para esta fase
+    private String correctAnswer = "APITO"; // Nome correto para esta fase
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +27,10 @@ public class activity_third_phase extends AppCompatActivity {
 
         // Defina a imagem e os nomes das opções
         imageCentral.setImageResource(R.drawable.apito); // Adicione sua imagem
-        buttonOption1.setText("Martelo");
-        buttonOption2.setText("Apito");
-        buttonOption3.setText("Tesoura");
-        buttonOption4.setText("Buzina");
+        buttonOption1.setText("BOLA");
+        buttonOption2.setText("APITO");
+        buttonOption3.setText("GELO");
+        buttonOption4.setText("BOLO");
 
         // Configure listeners para os botões
         View.OnClickListener optionClickListener = v -> {
