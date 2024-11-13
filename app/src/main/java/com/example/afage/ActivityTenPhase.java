@@ -62,7 +62,7 @@ public class ActivityTenPhase extends AppCompatActivity {
         if (isCorrect) {
             Toast.makeText(this, "Parabéns, você acertou todas as respostas!", Toast.LENGTH_SHORT).show();
             // Avançar para a próxima fase (ajuste conforme necessário)
-            startActivity(new Intent(ActivityTenPhase.this, ActivityTenPhase.class));
+            startActivity(new Intent(ActivityTenPhase.this, ActivityElevenPhase.class));
         } else {
             Toast.makeText(this, "Algumas respostas estão incorretas. Tente novamente!", Toast.LENGTH_SHORT).show();
         }

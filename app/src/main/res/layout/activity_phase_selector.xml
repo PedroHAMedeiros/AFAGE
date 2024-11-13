@@ -81,4 +81,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="FASE 10"/>
+
+    <!-- Botão para a Fase 11 -->
+    <Button
+        android:id="@+id/button_phase11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FASE 11"/>
+    <!-- Botão para a Fase 11 -->
+
+    <Button
+        android:id="@+id/button_phase12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FASE 12"/>
 </LinearLayout>
