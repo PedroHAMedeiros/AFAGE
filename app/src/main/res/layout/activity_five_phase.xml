@@ -148,4 +148,14 @@
         android:layout_marginBottom="16dp"
         android:layout_marginStart="152dp" />
 
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:contentDescription="Logo da empresa"
+        android:src="@drawable/logofinal2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

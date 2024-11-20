@@ -79,7 +79,7 @@ public class ActivityDozePhase extends AppCompatActivity {
         if (isCorrect) {
             Toast.makeText(this, "Parabens, voce acertou todas as frases!", Toast.LENGTH_SHORT).show();
             // Avançar para a próxima fase, se existir
-            startActivity(new Intent(ActivityDozePhase.this, ActivityDozePhase.class)); // Ajuste conforme necessário
+            startActivity(new Intent(ActivityDozePhase.this, ActivityFinalPhase.class)); // Ajuste conforme necessário
         } else {
             Toast.makeText(this, "Algumas respostas estao incorretas. Tente novamente!", Toast.LENGTH_SHORT).show();
         }
