@@ -1,9 +1,9 @@
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
 
     <!-- Imagem principal no centro -->
     <!-- Botões de opções -->
@@ -36,9 +36,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="PATO"
-        app:layout_constraintTop_toBottomOf="@id/image_main_quatro"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/image_main_quatro" />
 
     <Button
         android:id="@+id/button_option2_quatro"
@@ -46,9 +46,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="BANCO"
-        app:layout_constraintTop_toBottomOf="@id/button_option1_quatro"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/button_option1_quatro" />
 
     <Button
         android:id="@+id/button_option3_quatro"
@@ -56,9 +56,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="MESA"
-        app:layout_constraintTop_toBottomOf="@id/button_option2_quatro"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/button_option2_quatro" />
 
     <Button
         android:id="@+id/button_option4_quatro"
@@ -66,9 +66,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="ESCADA"
-        app:layout_constraintTop_toBottomOf="@id/button_option3_quatro"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/button_option3_quatro" />
 
     <ImageView
         android:id="@+id/image_logo"

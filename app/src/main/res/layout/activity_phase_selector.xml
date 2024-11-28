@@ -1,95 +1,98 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#FFFFFF"
     android:gravity="center"
+    android:orientation="vertical"
     android:padding="16dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:text="Selecione uma Fase"
-        android:textSize="24sp"
-        android:layout_marginBottom="20dp"/>
+        android:textSize="24sp" />
 
     <!-- Botão para a Fase 1 -->
     <Button
         android:id="@+id/button_phase1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FASE 1"/>
+        android:text="FASE 1" />
 
     <!-- Botão para a Fase 2 -->
     <Button
         android:id="@+id/button_phase2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FASE 2"/>
+        android:text="FASE 2" />
 
     <!-- Botão para a Fase 3 -->
     <Button
         android:id="@+id/button_phase3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FASE 3"/>
+        android:text="FASE 3" />
 
     <!-- Botão para a Fase 4 -->
     <Button
         android:id="@+id/button_phase4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FASE 4"/>
+        android:text="FASE 4" />
 
     <!-- Botão para a Fase 5 -->
     <Button
         android:id="@+id/button_phase5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FASE 5"/>
+        android:text="FASE 5" />
 
     <!-- Botão para a Fase 6 -->
     <Button
         android:id="@+id/button_phase6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FASE 6"/>
+        android:text="FASE 6" />
 
     <!-- Botão para a Fase 7 -->
     <Button
         android:id="@+id/button_phase7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FASE 7"/>
+        android:text="FASE 7" />
 
     <!-- Botão para a Fase 8 -->
     <Button
         android:id="@+id/button_phase8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FASE 8"/>
+        android:text="FASE 8" />
 
     <!-- Botão para a Fase 9 -->
     <Button
         android:id="@+id/button_phase9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FASE 9"/>
+        android:text="FASE 9" />
 
     <!-- Botão para a Fase 10 -->
     <Button
         android:id="@+id/button_phase10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FASE 10"/>
+        android:text="FASE 10" />
+
     <Button
         android:id="@+id/button_phase11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FASE 11"/>
+        android:text="FASE 11" />
+
     <Button
         android:id="@+id/button_phase12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FASE 12"/>
+        android:text="FASE 12" />
 
 </LinearLayout>
